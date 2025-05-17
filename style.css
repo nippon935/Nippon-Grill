@@ -1,0 +1,299 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+/* ========== Navigation Styles ========== */
+#navigation{
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgb(120, 21, 21);
+    padding: 0 20px;
+}
+#nav-buttons{
+    display: flex;
+}
+.button{
+    color:white;
+    padding: 0 10px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.button:hover{
+    color: grey;
+}
+#nippon-logo img{
+    width: 60px;
+    height: 60px;
+}
+/* ========== Heading Styles ========== */
+#heading-sec{
+    height: 45vh; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 50px;
+    color: rgb(45, 14, 14);
+
+    background-image: url('assets/seafood.png');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    position: relative;
+    overflow: hidden;
+}
+/* ========== About Styles ========== */
+#about-sec{
+    height: auto;
+    background-image: url('assets/background1.png');
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap; 
+}
+#about-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.about{
+    margin: 5%;
+    flex: 1 1 300px;
+}
+#about-sec img{
+    width: 450px;
+    height: 300px;
+    border-radius: 20px;
+    margin-right: 5%;
+}
+/* ========== Specials Styles ========== */
+#special-sec{
+    height: auto;
+    background-color: rgb(129, 48, 48);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+#special-content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 0 5%;
+}
+.dish{
+    margin: 10px;
+    background: rgb(236, 221, 202);
+    width: 400px;
+    height: 300px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.dish img{
+    margin-top: 15%;
+    width: 75%;
+    height: 45%;
+}
+/* ========== Gallery Styles ========== */
+#gallery-sec {
+    height: 500px;
+    background-image: url('assets/background1.png');
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+.gallery-con {
+    display: flex;
+    animation: scroll-left 15s linear infinite;
+}
+
+.gallery-img {
+    width: 300px;
+    height: 200px;
+    margin-right: 10px;
+    border-radius: 8px;
+}
+
+@keyframes scroll-left {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+/* ========== Link Styles ========== */
+#links-sec {
+    height: 300px;
+    display: flex;
+    background-color: rgb(148, 69, 69);
+    justify-content: center; 
+    align-items: center; 
+    padding: 20px;
+}
+.link h1{
+    font-size: 25px;
+    margin-bottom: 25px;
+}
+#follow {
+    text-align: center;
+    margin-right: 15%;
+}
+#follow img {
+    width: 40px;
+    height: 40px;
+    margin-right: 5px;
+}
+#delivery{
+    text-align: center;
+}
+#delivery h1{
+    margin-bottom: 20px;
+}
+#delivery img{
+    width: 60px;
+    height: 40px;
+    margin-right: 5px;
+}
+/* ========== Contact/Location Styles ========== */
+#contact-sec{
+    height: auto;
+    background-color: rgb(120, 21, 21);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10%;
+    flex-wrap: wrap;
+}
+#contact-content{
+    display: flex;
+
+}
+#contact-content h1{
+    font-size: 24px;
+}
+.contact{
+    margin-right: 40px;  
+}
+#map-con{
+    padding: 0 0 4%;
+    margin-right: 4%;
+}
+
+/* ========== mobile styles ========== */
+@media (max-width: 768px) {
+    #navigation {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    #nav-buttons {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .button {
+        padding: 10px 0;
+        font-size: 16px;
+    }
+
+    #heading-sec {
+        background-image: url('assets/seafood.png');
+        background-attachment: scroll;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        
+        font-size: 28px;
+        padding: 20px;
+        height: 35vh;
+    }
+
+    #about-sec {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    #about-sec img {
+        width: 90%;
+        height: auto;
+        margin: 20px 0;
+    }
+
+    .about {
+        margin: 10px 0;
+        flex: 1 1 100%;
+        text-align: center;
+    }
+
+    #special-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .dish {
+        width: 90%;
+        height: auto;
+    }
+
+    .dish img {
+        width: 90%;
+        height: 50%;
+        margin-top: 10px;
+        margin-bottom: 70px;
+
+    }
+    
+    #links-sec {
+        flex-direction: column;
+        height: auto;
+        padding: 30px 0;
+        text-align: center;
+    }
+
+    #follow, #delivery {
+        margin: 20px 0;
+    }
+
+    #contact-sec {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    #map-con {
+        margin: 0;
+        width: 100%;
+        margin-left: 15px;
+    }
+
+    iframe {
+        width: 90%;
+        height: 250px;
+    }
+
+    #contact-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .contact {
+        margin: 20px 0;
+    }
+
+    #nippon-logo img {
+        width: 50px;
+        height: 50px;
+    }
+}
