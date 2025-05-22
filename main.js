@@ -16,17 +16,6 @@ window.addEventListener("DOMContentLoaded", () => {
   document.getElementById("contact-location").addEventListener("click", () => {
     document.getElementById("contact-sec").scrollIntoView({ behavior: "smooth" });
   });
-  
-
-
-  const gallery = document.getElementById('gallery');
-  setInterval(() => {
-    const firstImages = gallery.querySelector('.gallery-img');
-    if (firstImages) {
-      gallery.appendChild(firstImages);
-    }
-  }, 100);
-
 });
 
 
