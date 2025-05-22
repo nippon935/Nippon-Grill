@@ -97,9 +97,10 @@ body{
     text-align: center;
 }
 .dish img{
-    margin-top: 15%;
+    margin: 10px;
+    border-radius: 5px;
     width: 75%;
-    height: 45%;
+    height: 70%;
 }
 /* ========== Gallery Styles ========== */
 #gallery-sec {
@@ -112,7 +113,7 @@ body{
 
 .gallery-con {
     display: flex;
-    animation: scroll-left 15s linear infinite;
+    animation: scroll-left 90s linear infinite;
 }
 
 .gallery-img {
@@ -127,7 +128,7 @@ body{
         transform: translateX(0%);
     }
     100% {
-        transform: translateX(-50%);
+        transform: translateX(-74%);
     }
 }
 
