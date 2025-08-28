@@ -71,6 +71,33 @@ body{
     border-radius: 20px;
     margin-right: 5%;
 }
+/* ========== News Styles ========== */
+#news-sec{
+    height: auto;
+    background-color: rgb(127, 21, 21);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+#news-content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.news {
+    margin-bottom: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.news img {
+    max-width: 70%;
+    max-height: 70%;
+    border-radius: 10px;
+    object-fit: contain;
+}
 /* ========== Specials Styles ========== */
 #special-sec{
     height: auto;

@@ -4,7 +4,6 @@ window.addEventListener("DOMContentLoaded", () => {
     document.getElementById("about-sec").scrollIntoView({ behavior: "smooth" });
   });
 
-
   document.getElementById("specials").addEventListener("click", () => {
     document.getElementById("special-sec").scrollIntoView({ behavior: "smooth" });
   });
